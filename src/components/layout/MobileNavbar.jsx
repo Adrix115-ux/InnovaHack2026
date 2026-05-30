@@ -1,11 +1,12 @@
 // MobileNavbar.jsx — Header fijo superior con brand y menú hamburguesa
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Leaf, BookOpen, Search } from 'lucide-react';
+import { Menu, X, Leaf, Search, Map } from 'lucide-react';
 
 const NAV_LINKS = [
   { to: '/', label: 'Portada', icon: Leaf },
   { to: '/catalogo', label: 'Buscador', icon: Search },
+  { to: '/mapa', label: 'Mapa Regional', icon: Map },
 ];
 
 export default function MobileNavbar() {

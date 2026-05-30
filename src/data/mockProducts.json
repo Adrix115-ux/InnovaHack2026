@@ -6,6 +6,7 @@
     "imagen": null,
     "estadoTemporada": "En temporada",
     "mesesDisponible": [1, 2, 3],
+    "region": "chiquitania",
     "contacto": {
       "nombreAsociacion": "ASPROAL Santa Cruz",
       "telefono": "+591 7712 3456"
@@ -24,6 +25,7 @@
     "imagen": null,
     "estadoTemporada": "Próximo a iniciar",
     "mesesDisponible": [6, 7, 8, 9],
+    "region": "amazonia",
     "contacto": {
       "nombreAsociacion": "COOPAM Beni",
       "telefono": "+591 6698 7890"
@@ -42,6 +44,7 @@
     "imagen": null,
     "estadoTemporada": "Por terminar",
     "mesesDisponible": [4, 5, 6],
+    "region": "amazonia",
     "contacto": {
       "nombreAsociacion": "APROBAC Pando",
       "telefono": "+591 7834 5612"
@@ -60,6 +63,7 @@
     "imagen": null,
     "estadoTemporada": "En temporada",
     "mesesDisponible": [3, 4, 5, 6],
+    "region": "valles",
     "contacto": {
       "nombreAsociacion": "APROLAC Cochabamba",
       "telefono": "+591 7556 2341"
@@ -78,6 +82,7 @@
     "imagen": null,
     "estadoTemporada": "Próximo a iniciar",
     "mesesDisponible": [8, 9, 10, 11],
+    "region": "valles",
     "contacto": {
       "nombreAsociacion": "APROCAL Tarija",
       "telefono": "+591 6745 9823"
@@ -96,6 +101,7 @@
     "imagen": null,
     "estadoTemporada": "Por terminar",
     "mesesDisponible": [4, 5],
+    "region": "chiquitania",
     "contacto": {
       "nombreAsociacion": "ANAPQUI Oruro",
       "telefono": "+591 7123 4567"

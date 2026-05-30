@@ -4,6 +4,7 @@ import MainLayout from './components/layout/MainLayout';
 import Home from './pages/Home';
 import Catalog from './pages/Catalog';
 import ProductDetail from './pages/ProductDetail';
+import MapExplorer from './pages/MapExplorer';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/catalogo" element={<Catalog />} />
           <Route path="/producto/:id" element={<ProductDetail />} />
+          <Route path="/mapa" element={<MapExplorer />} />
           {/* Redirección para rutas no encontradas */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
