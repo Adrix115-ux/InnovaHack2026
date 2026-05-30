@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "nombre": "Almendra Chiquitana",
+    "descripcionBreve": "Fruto silvestre del bosque chiquitano, base de aceites, harinas y chocolates artesanales de alta demanda gastronómica.",
+    "imagen": null,
+    "estadoTemporada": "En temporada",
+    "mesesDisponible": [1, 2, 3],
+    "contacto": {
+      "nombreAsociacion": "ASPROAL Santa Cruz",
+      "telefono": "+591 7712 3456"
+    },
+    "usosGastronomicos": [
+      "Aceite virgen para aderezos y salteados",
+      "Harina para repostería sin gluten",
+      "Base para chocolates artesanales",
+      "Manteca vegetal para pastelería"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Copoazú",
+    "descripcionBreve": "Fruta amazónica de pulpa cremosa y aroma intenso, perfecta para mousses, helados y bebidas tropicales premium.",
+    "imagen": null,
+    "estadoTemporada": "Próximo a iniciar",
+    "mesesDisponible": [6, 7, 8, 9],
+    "contacto": {
+      "nombreAsociacion": "COOPAM Beni",
+      "telefono": "+591 6698 7890"
+    },
+    "usosGastronomicos": [
+      "Mousse y cremas heladas",
+      "Bebidas y refrescos gourmet",
+      "Mermeladas y compotas",
+      "Relleno para bombones artesanales"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Camu Camu",
+    "descripcionBreve": "Superfruta amazónica con el mayor contenido de Vitamina C del mundo, ideal para marinadas, aderezos y cócteles.",
+    "imagen": null,
+    "estadoTemporada": "Por terminar",
+    "mesesDisponible": [4, 5, 6],
+    "contacto": {
+      "nombreAsociacion": "APROBAC Pando",
+      "telefono": "+591 7834 5612"
+    },
+    "usosGastronomicos": [
+      "Marinadas para carnes y pescados",
+      "Aderezos para ensaladas",
+      "Cócteles y bebidas funcionales",
+      "Salsas agridulces gourmet"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Maíz Morado Andino",
+    "descripcionBreve": "Variedad ancestral del altiplano boliviano, rico en antocianinas. Excelente para chicha, colorantes naturales y repostería.",
+    "imagen": null,
+    "estadoTemporada": "En temporada",
+    "mesesDisponible": [3, 4, 5, 6],
+    "contacto": {
+      "nombreAsociacion": "APROLAC Cochabamba",
+      "telefono": "+591 7556 2341"
+    },
+    "usosGastronomicos": [
+      "Chicha morada y bebidas fermentadas",
+      "Colorante natural para repostería",
+      "Mazamorras y postres tradicionales",
+      "Harina para pastas artesanales"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Locoto Rojo",
+    "descripcionBreve": "Ají andino de encendido sabor frutal y picor intenso. Protagonista de salsas, encurtidos y marinadas bolivianas.",
+    "imagen": null,
+    "estadoTemporada": "Próximo a iniciar",
+    "mesesDisponible": [8, 9, 10, 11],
+    "contacto": {
+      "nombreAsociacion": "APROCAL Tarija",
+      "telefono": "+591 6745 9823"
+    },
+    "usosGastronomicos": [
+      "Salsas picantes y llajwas",
+      "Encurtidos y escabeches",
+      "Marinadas para parrillas",
+      "Aceites infusionados"
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "Quinua Real",
+    "descripcionBreve": "Grano sagrado del altiplano boliviano. El de mayor tamaño y valor nutritivo del mundo, versátil en cocina de autor.",
+    "imagen": null,
+    "estadoTemporada": "Por terminar",
+    "mesesDisponible": [4, 5],
+    "contacto": {
+      "nombreAsociacion": "ANAPQUI Oruro",
+      "telefono": "+591 7123 4567"
+    },
+    "usosGastronomicos": [
+      "Risottos y pilafs gourmet",
+      "Harinas para repostería sin gluten",
+      "Croquetas y hamburguesas vegetales",
+      "Caldos y cremas espesantes"
+    ]
+  }
+]
