@@ -2,115 +2,401 @@
   {
     "id": 1,
     "nombre": "Almendra Chiquitana",
-    "descripcionBreve": "Fruto silvestre del bosque chiquitano, base de aceites, harinas y chocolates artesanales de alta demanda gastronómica.",
-    "imagen": null,
-    "estadoTemporada": "En temporada",
-    "mesesDisponible": [1, 2, 3],
+    "descripcionBreve": "Fruto seco del bosque seco chiquitano con sabor suave y perfil graso similar al macadamia. Su aceite virgen y su harina son ingredientes de alta demanda en cocina de autor.",
+    "regionProcedencia": "Velasco",
     "region": "chiquitania",
+    "estadoTemporada": "En temporada",
+    "mesesDisponible": [4, 5, 6, 7],
     "contacto": {
-      "nombreAsociacion": "ASPROAL Santa Cruz",
+      "nombreAsociacion": "Asociación de Recolectoras Chiquitanas ARBOL",
       "telefono": "+591 7712 3456"
     },
     "usosGastronomicos": [
-      "Aceite virgen para aderezos y salteados",
-      "Harina para repostería sin gluten",
-      "Base para chocolates artesanales",
-      "Manteca vegetal para pastelería"
-    ]
+      "Aceite virgen para aderezos fríos y crudos",
+      "Harina sin gluten para repostería de autor",
+      "Pralinés y bases para chocolates artesanales",
+      "Manteca vegetal para confitería y ganaches"
+    ],
+    "imagenUrl": "/placeholder.png"
   },
   {
     "id": 2,
-    "nombre": "Copoazú",
-    "descripcionBreve": "Fruta amazónica de pulpa cremosa y aroma intenso, perfecta para mousses, helados y bebidas tropicales premium.",
-    "imagen": null,
-    "estadoTemporada": "Próximo a iniciar",
-    "mesesDisponible": [6, 7, 8, 9],
+    "nombre": "Achachairú",
+    "descripcionBreve": "Pequeña baya amazónica de cáscara naranja y pulpa blanca gelatinosa, con acidez tropical intensa y retrogusto dulce. Perfecta para contrastes en alta cocina.",
+    "regionProcedencia": "Guarayos",
     "region": "amazonia",
+    "estadoTemporada": "Fuera de temporada",
+    "mesesDisponible": [11, 12, 1],
     "contacto": {
-      "nombreAsociacion": "COOPAM Beni",
-      "telefono": "+591 6698 7890"
+      "nombreAsociacion": "Cooperativa Frutas Amazónicas Guarayos",
+      "telefono": "+591 7698 1120"
     },
     "usosGastronomicos": [
-      "Mousse y cremas heladas",
-      "Bebidas y refrescos gourmet",
-      "Mermeladas y compotas",
-      "Relleno para bombones artesanales"
-    ]
+      "Coulis y salsas agridulces para pescados blancos",
+      "Sorbetes y granizados gourmet",
+      "Cócteles tropicales de autor",
+      "Gelatinas y confituras para tabla de quesos"
+    ],
+    "imagenUrl": "/placeholder.png"
   },
   {
     "id": 3,
-    "nombre": "Camu Camu",
-    "descripcionBreve": "Superfruta amazónica con el mayor contenido de Vitamina C del mundo, ideal para marinadas, aderezos y cócteles.",
-    "imagen": null,
-    "estadoTemporada": "Por terminar",
-    "mesesDisponible": [4, 5, 6],
+    "nombre": "Copoazú",
+    "descripcionBreve": "Pariente silvestre del cacao con pulpa cremosa de aroma profundo, notas de maracuyá y textura untuosa. Es el ingrediente amazónico más versátil para mousse y chocolatería.",
+    "regionProcedencia": "Guarayos",
     "region": "amazonia",
+    "estadoTemporada": "Próximo a iniciar",
+    "mesesDisponible": [6, 7, 8, 9, 10],
     "contacto": {
-      "nombreAsociacion": "APROBAC Pando",
-      "telefono": "+591 7834 5612"
+      "nombreAsociacion": "COOPAM Beni-Guarayos",
+      "telefono": "+591 6698 7890"
     },
     "usosGastronomicos": [
-      "Marinadas para carnes y pescados",
-      "Aderezos para ensaladas",
-      "Cócteles y bebidas funcionales",
-      "Salsas agridulces gourmet"
-    ]
+      "Mousse y cremas heladas de autor",
+      "Bebidas fermentadas y kombucha tropical",
+      "Mermeladas y compota para embutidos curados",
+      "Relleno para bombones y trufas artesanales"
+    ],
+    "imagenUrl": "/placeholder.png"
   },
   {
     "id": 4,
-    "nombre": "Maíz Morado Andino",
-    "descripcionBreve": "Variedad ancestral del altiplano boliviano, rico en antocianinas. Excelente para chicha, colorantes naturales y repostería.",
-    "imagen": null,
-    "estadoTemporada": "En temporada",
-    "mesesDisponible": [3, 4, 5, 6],
-    "region": "valles",
+    "nombre": "Motacú",
+    "descripcionBreve": "Palma silvestre del trópico cruceño con frutos oleaginosos de sabor intenso y ahumado. Su aceite artesanal aporta un carácter amazónico único a cualquier preparación.",
+    "regionProcedencia": "Ñuflo de Chávez",
+    "region": "chiquitania",
+    "estadoTemporada": "Próximo a iniciar",
+    "mesesDisponible": [6, 7, 8, 9],
     "contacto": {
-      "nombreAsociacion": "APROLAC Cochabamba",
-      "telefono": "+591 7556 2341"
+      "nombreAsociacion": "Comunidad Productora Monte Verde",
+      "telefono": "+591 7834 0021"
     },
     "usosGastronomicos": [
-      "Chicha morada y bebidas fermentadas",
-      "Colorante natural para repostería",
-      "Mazamorras y postres tradicionales",
-      "Harina para pastas artesanales"
-    ]
+      "Aceite nativo para salteados y frituras profundas",
+      "Leche vegetal para cremas y veloutés",
+      "Croquetas y empanadas de relleno amazónico",
+      "Emulsiones para aderezos calientes"
+    ],
+    "imagenUrl": "/placeholder.png"
   },
   {
     "id": 5,
-    "nombre": "Locoto Rojo",
-    "descripcionBreve": "Ají andino de encendido sabor frutal y picor intenso. Protagonista de salsas, encurtidos y marinadas bolivianas.",
-    "imagen": null,
+    "nombre": "Guapomó",
+    "descripcionBreve": "Fruta silvestre del bosque chiquitano con notas cítricas, dulzor delicado y una fragancia floral que recuerda a la guayaba blanca. Ideal para repostería fina y bebidas premium.",
+    "regionProcedencia": "Velasco",
+    "region": "chiquitania",
     "estadoTemporada": "Próximo a iniciar",
-    "mesesDisponible": [8, 9, 10, 11],
-    "region": "valles",
+    "mesesDisponible": [7, 8, 9],
     "contacto": {
-      "nombreAsociacion": "APROCAL Tarija",
-      "telefono": "+591 6745 9823"
+      "nombreAsociacion": "Asociación Agroforestal Concepción Sur",
+      "telefono": "+591 7756 3312"
     },
     "usosGastronomicos": [
-      "Salsas picantes y llajwas",
-      "Encurtidos y escabeches",
-      "Marinadas para parrillas",
-      "Aceites infusionados"
-    ]
+      "Helados artesanales y parfaits",
+      "Reducciones para carnes blancas y aves",
+      "Relleno para tartas y cheesecakes tropicales",
+      "Agua fresca y limonadas gourmet"
+    ],
+    "imagenUrl": "/placeholder.png"
   },
   {
     "id": 6,
-    "nombre": "Quinua Real",
-    "descripcionBreve": "Grano sagrado del altiplano boliviano. El de mayor tamaño y valor nutritivo del mundo, versátil en cocina de autor.",
-    "imagen": null,
-    "estadoTemporada": "Por terminar",
-    "mesesDisponible": [4, 5],
+    "nombre": "Ají Gusanito",
+    "descripcionBreve": "Ajicito silvestre boliviano de picor moderado y perfume frutal característico. A diferencia del locoto, su calor es envolvente y prolongado, ideal para salsas complejas.",
+    "regionProcedencia": "Ñuflo de Chávez",
     "region": "chiquitania",
+    "estadoTemporada": "En temporada",
+    "mesesDisponible": [3, 4, 5, 6, 7],
     "contacto": {
-      "nombreAsociacion": "ANAPQUI Oruro",
-      "telefono": "+591 7123 4567"
+      "nombreAsociacion": "Mujeres Productoras de San Julián",
+      "telefono": "+591 6712 8845"
     },
     "usosGastronomicos": [
-      "Risottos y pilafs gourmet",
-      "Harinas para repostería sin gluten",
-      "Croquetas y hamburguesas vegetales",
-      "Caldos y cremas espesantes"
-    ]
+      "Salsas picantes artesanales y llajwas de autor",
+      "Aceites infusionados para aderezos finales",
+      "Encurtidos y pickles gourmet",
+      "Marinadas para carnes a la parrilla"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Cusi",
+    "descripcionBreve": "Palma emblemática de la Chiquitania cuya almendra produce un aceite neutro y estable de altísimo punto de humo. Su leche artesanal reemplaza con elegancia la crema de coco.",
+    "regionProcedencia": "Chiquitos",
+    "region": "chiquitania",
+    "estadoTemporada": "Fuera de temporada",
+    "mesesDisponible": [8, 9, 10, 11],
+    "contacto": {
+      "nombreAsociacion": "APROCUSI San Ignacio de Velasco",
+      "telefono": "+591 7541 6690"
+    },
+    "usosGastronomicos": [
+      "Aceite neutro para frituras y confit",
+      "Leche vegetal para bisques y cremas",
+      "Harina de almendra para pan sin gluten",
+      "Jabones artesanales y cosmética culinaria"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Miel de Señorita",
+    "descripcionBreve": "Miel líquida sin cera producida por la abeja nativa sin aguijón Tetragonisca angustula. De textura fluida, acidez sutil y notas florales intensas muy apreciadas en alta pastelería.",
+    "regionProcedencia": "Velasco",
+    "region": "chiquitania",
+    "estadoTemporada": "En temporada",
+    "mesesDisponible": [4, 5, 6, 7, 8, 9],
+    "contacto": {
+      "nombreAsociacion": "Meliponicultoras del Bosque Chiquitano",
+      "telefono": "+591 7623 4410"
+    },
+    "usosGastronomicos": [
+      "Glaseados y lacas para postres finos",
+      "Vinagreta con miel para ensaladas de autor",
+      "Cura en seco para quesos y embutidos",
+      "Bebida fermentada artesanal (hidromiel)"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Asaí Silvestre",
+    "descripcionBreve": "Palma amazónica de bayas morado-intenso con sabor a frutos del bosque, cacao y tierra húmeda. La pulpa reconstituida tiene una densidad y un color que domina cualquier plato.",
+    "regionProcedencia": "Guarayos",
+    "region": "amazonia",
+    "estadoTemporada": "Por terminar",
+    "mesesDisponible": [3, 4, 5],
+    "contacto": {
+      "nombreAsociacion": "APAM Asociación de Palmicultores Amazónicos",
+      "telefono": "+591 7880 2234"
+    },
+    "usosGastronomicos": [
+      "Bowls y smoothies nutricionales gourmet",
+      "Helados y sorbetes de color intenso",
+      "Reducción oscura para carnes rojas",
+      "Colorante natural para masas y cremas"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 10,
+    "nombre": "Cacao Silvestre",
+    "descripcionBreve": "Cacao nativo no mejorado del trópico boliviano, con fermentación espontánea y notas florales, frutas rojas y especias. La materia prima más valorada por los chocolateros de autor.",
+    "regionProcedencia": "Guarayos",
+    "region": "amazonia",
+    "estadoTemporada": "En temporada",
+    "mesesDisponible": [5, 6, 7, 8],
+    "contacto": {
+      "nombreAsociacion": "COPROCA Cooperativa de Productores de Cacao",
+      "telefono": "+591 7934 5555"
+    },
+    "usosGastronomicos": [
+      "Chocolate bean-to-bar de origen único",
+      "Mole y salsas de cacao para carnes",
+      "Nibs tostados para granola y postres",
+      "Manteca de cacao para pastelería fina"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 11,
+    "nombre": "Paquió",
+    "descripcionBreve": "Vaina leñosa de árbol del bosque chiquitano con interior harinoso de sabor dulce y ligeramente ácido. La harina de paquió tiene uso ancestral y potencial enorme en pastelería moderna.",
+    "regionProcedencia": "Chiquitos",
+    "region": "chiquitania",
+    "estadoTemporada": "Fuera de temporada",
+    "mesesDisponible": [9, 10, 11, 12],
+    "contacto": {
+      "nombreAsociacion": "Productores Forestales de San José de Chiquitos",
+      "telefono": "+591 7312 9900"
+    },
+    "usosGastronomicos": [
+      "Harina para brownies y queques oscuros",
+      "Bebida energética ancestral fermentada",
+      "Sustituto del tamarindo en salsas agridulces",
+      "Caramelos y dulces de cocina nativa"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 12,
+    "nombre": "Tarumá",
+    "descripcionBreve": "Fruta aromática de árbol ribereño amazónico, de sabor entre ciruelo y oliva verde, con taninos finos que la hacen idónea para curados y salsas de larga cocción.",
+    "regionProcedencia": "Ñuflo de Chávez",
+    "region": "chiquitania",
+    "estadoTemporada": "Por terminar",
+    "mesesDisponible": [2, 3, 4, 5],
+    "contacto": {
+      "nombreAsociacion": "Recolectores Ribereños del Río San Julián",
+      "telefono": "+591 7456 1187"
+    },
+    "usosGastronomicos": [
+      "Aceitunas verdes amazónicas en conserva",
+      "Tapenade y pastas de untar para charcutería",
+      "Reducción tinto para acompañar quesos",
+      "Vinagre artesanal de frutas silvestres"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 13,
+    "nombre": "Palmito Silvestre",
+    "descripcionBreve": "Corazón tierno y blanco de la palma Euterpe con textura crujiente, sabor neutro y delicado. El palmito fresco —no en lata— tiene una sutileza que eleva carpaccios y entrantes.",
+    "regionProcedencia": "Guarayos",
+    "region": "amazonia",
+    "estadoTemporada": "En temporada",
+    "mesesDisponible": [4, 5, 6, 7, 8, 9],
+    "contacto": {
+      "nombreAsociacion": "Asociación Agroforestal Yaguarú",
+      "telefono": "+591 7745 6632"
+    },
+    "usosGastronomicos": [
+      "Carpaccio fresco con vinagreta de cítricos",
+      "Relleno para canelones y raviolis nativos",
+      "Ceviche de palmito vegano para alta cocina",
+      "Crema de palmito para sopas de autor"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 14,
+    "nombre": "Urucú",
+    "descripcionBreve": "Semillas del árbol del achiote que tiñen y aroman con notas a nuez, pimentón suave y tierra. El colorante más potente y natural de la gastronomía boliviana.",
+    "regionProcedencia": "Guarayos",
+    "region": "amazonia",
+    "estadoTemporada": "Próximo a iniciar",
+    "mesesDisponible": [7, 8, 9, 10],
+    "contacto": {
+      "nombreAsociacion": "Asociación de Mujeres Productoras Urucú Verde",
+      "telefono": "+591 6987 3340"
+    },
+    "usosGastronomicos": [
+      "Aceite urucú para colorear arroces y salsas",
+      "Mantequilla tintada para emplatados vistosos",
+      "Rub natural para carnes a la brasa",
+      "Colorante para masas de pasta fresca"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 15,
+    "nombre": "Caimito Amazónico",
+    "descripcionBreve": "Fruta tropical de pulpa gelatinosa color crema con sabor a caramelo lácteo y notas de mango. Su textura viscosa es fascinante para cremas, pannacottas y esferificaciones.",
+    "regionProcedencia": "Guarayos",
+    "region": "amazonia",
+    "estadoTemporada": "Fuera de temporada",
+    "mesesDisponible": [10, 11, 12, 1],
+    "contacto": {
+      "nombreAsociacion": "Frutales Amazónicos del Norte Cruceño",
+      "telefono": "+591 7823 1190"
+    },
+    "usosGastronomicos": [
+      "Pannacotta tropical con coulis cítrico",
+      "Esferificaciones para menú degustación",
+      "Helado de textura ultra-cremosa",
+      "Smoothie bowl con granola de quinua"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 16,
+    "nombre": "Chocolatillo de Monte",
+    "descripcionBreve": "Primo silvestre del cacao (Theobroma subincanum) con frutos pequeños y pulpa escasa pero de acidez vibrante. Sus notas fermentadas y tropicales resultan irresistibles en bombonería.",
+    "regionProcedencia": "Ñuflo de Chávez",
+    "region": "chiquitania",
+    "estadoTemporada": "En temporada",
+    "mesesDisponible": [4, 5, 6, 7],
+    "contacto": {
+      "nombreAsociacion": "Recolectoras del Monte Ñuflo de Chávez",
+      "telefono": "+591 7601 4423"
+    },
+    "usosGastronomicos": [
+      "Bombones de chocolate silvestre single origin",
+      "Fermentado artesanal para cocteles de autor",
+      "Maridaje con quesos azules y maduros",
+      "Pulpa para granizados y sorbetes de temporada"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 17,
+    "nombre": "Pacay",
+    "descripcionBreve": "La vaina amazónica más larga y sorprendente: su algodón blanco interior es dulce como el azúcar y fundente en boca. Ingrediente de textura única para postres de alta sorpresa.",
+    "regionProcedencia": "Guarayos",
+    "region": "amazonia",
+    "estadoTemporada": "Próximo a iniciar",
+    "mesesDisponible": [6, 7, 8, 9],
+    "contacto": {
+      "nombreAsociacion": "Asociación Agroecológica Guarayos Norte",
+      "telefono": "+591 7712 8801"
+    },
+    "usosGastronomicos": [
+      "Algodón dulce fresco para emplatados creativos",
+      "Merengue natural deshidratado para postres",
+      "Infusión para sorbetes de sabor suave",
+      "Relleno para crepes y waffles tropicales"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 18,
+    "nombre": "Taperibá",
+    "descripcionBreve": "Fruta silvestre ácida del género Spondias, conocida como ciruela tropical. Su pulpa amarilla y aromática con acidez viva es ideal para concentraciones, agridulces y fermentados.",
+    "regionProcedencia": "Guarayos",
+    "region": "amazonia",
+    "estadoTemporada": "Próximo a iniciar",
+    "mesesDisponible": [7, 8, 9, 10],
+    "contacto": {
+      "nombreAsociacion": "Recolectores del Bosque Guarayos Sur",
+      "telefono": "+591 6845 2270"
+    },
+    "usosGastronomicos": [
+      "Agridulce para glasear carnes de caza",
+      "Chicha artesanal fermentada de autor",
+      "Chutney tropical para tabla de embutidos",
+      "Destilado artesanal y licor de temporada"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 19,
+    "nombre": "Totaí",
+    "descripcionBreve": "Palma espinosa de la Chiquitania con frutos de mesocarpio aceitoso y endospermo duro. El aceite artesanal de Totaí tiene alta estabilidad térmica y aroma a nuez tostada.",
+    "regionProcedencia": "Ángel Sandoval",
+    "region": "chiquitania",
+    "estadoTemporada": "Fuera de temporada",
+    "mesesDisponible": [10, 11, 12, 1, 2],
+    "contacto": {
+      "nombreAsociacion": "APROPAL Productores de Palmas San Matías",
+      "telefono": "+591 7512 6644"
+    },
+    "usosGastronomicos": [
+      "Aceite de nuez para pastelería de temperatura alta",
+      "Harina de endospermo para galletas sin gluten",
+      "Confites y almendras tostadas para snacks gourmet",
+      "Emulsión para carnes cocidas a baja temperatura"
+    ],
+    "imagenUrl": "/placeholder.png"
+  },
+  {
+    "id": 20,
+    "nombre": "Ajo de Monte",
+    "descripcionBreve": "Liana aromática del bosque amazónico cuyas hojas y corteza desprenden un potente olor a ajo puro al frotarse. Sustituto silvestre y vegano del ajo convencional en cocina de autor.",
+    "regionProcedencia": "Ñuflo de Chávez",
+    "region": "chiquitania",
+    "estadoTemporada": "En temporada",
+    "mesesDisponible": [3, 4, 5, 6, 7, 8],
+    "contacto": {
+      "nombreAsociacion": "Plantas Medicinales y Culinarias del Bosque Seco",
+      "telefono": "+591 7690 5512"
+    },
+    "usosGastronomicos": [
+      "Aceite infusionado al ajo silvestre para terminaciones",
+      "Mantequilla compuesta para carnes y pescados",
+      "Fond y caldos base de cocina de autor",
+      "Sal aromática y condimento deshidratado"
+    ],
+    "imagenUrl": "/placeholder.png"
   }
 ]
