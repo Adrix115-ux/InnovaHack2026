@@ -1,7 +1,7 @@
 // MapExplorer.jsx — Vista de exploración geográfica del Calendario Vivo FAN
 import { useState, useMemo, useCallback } from 'react';
 import { Map, Info } from 'lucide-react';
-import SantaCruzSVG from '../components/ui/SantaCruzSVG';
+import MapaInteractivo from '../components/ui/MapaInteractivo';
 import RegionBottomSheet from '../components/ui/RegionBottomSheet';
 import products from '../data/mockProducts.json';
 
@@ -60,26 +60,12 @@ export default function MapExplorer() {
       {/* ── Área del mapa — ocupa todo el espacio restante ── */}
       <div className="flex-1 relative overflow-hidden">
 
-        {/* Gradiente de atmósfera en los bordes */}
-        <div
-          className="absolute inset-0 pointer-events-none z-10"
-          aria-hidden="true"
-          style={{
-            background: 'radial-gradient(ellipse at center, transparent 60%, #0a120a 100%)',
-          }}
-        />
-
-        {/* Contenedor del SVG — centrado y con padding seguro */}
-        <div className="absolute inset-0 flex items-center justify-center p-4 z-0">
-          <div
-            className="relative w-full"
-            style={{ maxWidth: '440px', aspectRatio: '1 / 1' }}
-          >
-            <SantaCruzSVG
-              selectedRegion={selectedRegion}
-              onRegionClick={handleRegionClick}
-            />
-          </div>
+        {/* Contenedor del SVG — ocupa todo el espacio disponible */}
+        <div className="absolute inset-0 z-0">
+          <MapaInteractivo
+            selectedRegion={selectedRegion}
+            onRegionClick={handleRegionClick}
+          />
         </div>
 
         {/* ── Leyenda inferior flotante ── */}
