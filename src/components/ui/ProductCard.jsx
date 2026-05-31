@@ -1,8 +1,18 @@
 // ProductCard.jsx — Tarjeta de producto para carruseles y grids
 import { Link } from 'react-router-dom';
-import { ArrowRight, Leaf } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import SeasonBadge from './SeasonBadge';
 import { formatMonthRange, getSeasonStyle } from '../../utils/dateHelpers';
+
+// Mapa de emojis por nombre de producto (fallback si no coincide: 🌿)
+const PRODUCT_EMOJIS = {
+  'Almendra Chiquitana': '🌰',
+  'Copoazú':            '🍈',
+  'Camu Camu':          '🫐',
+  'Maíz Morado Andino': '🌽',
+  'Locoto Rojo':        '🌶️',
+  'Quinua Real':        '🌾',
+};
 
 /**
  * Props:
@@ -11,7 +21,7 @@ import { formatMonthRange, getSeasonStyle } from '../../utils/dateHelpers';
  */
 export default function ProductCard({ product, variant = 'carousel' }) {
   const { bg, text } = getSeasonStyle(product.estadoTemporada);
-
+  const emoji = PRODUCT_EMOJIS[product.nombre] ?? '🌿';
   const isGrid = variant === 'grid';
 
   return (
@@ -27,17 +37,32 @@ export default function ProductCard({ product, variant = 'carousel' }) {
       `}
       aria-label={`Ver ficha de ${product.nombre}`}
     >
-      {/* Image placeholder */}
+      {/* Image / emoji hero */}
       <div
-        className={`relative flex items-center justify-center overflow-hidden
+        className={`
+          relative flex items-center justify-center overflow-hidden
           ${bg}
           ${isGrid ? 'h-32' : 'h-28'}
         `}
       >
-        <Leaf
-          size={isGrid ? 52 : 44}
-          className={`${text} opacity-40 group-hover:opacity-60 transition-opacity duration-300 group-hover:scale-110 transform`}
+        {/* Subtle dot-grid pattern */}
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
+            backgroundSize: '16px 16px',
+          }}
         />
+
+        {/* Large emoji */}
+        <span
+          className="relative text-5xl select-none drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
+          aria-hidden="true"
+          style={{ fontSize: isGrid ? '3rem' : '2.5rem' }}
+        >
+          {emoji}
+        </span>
+
         {/* Gradient overlay at bottom */}
         <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#1e2d1e] to-transparent" />
       </div>

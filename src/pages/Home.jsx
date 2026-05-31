@@ -5,9 +5,9 @@ import ProductCard from '../components/ui/ProductCard';
 import products from '../data/mockProducts.json';
 
 // Filtrar productos por estado
-const enTemporada = products.filter((p) => p.estadoTemporada === 'En temporada');
+const enTemporada   = products.filter((p) => p.estadoTemporada === 'En temporada');
 const proximosIniciar = products.filter((p) => p.estadoTemporada === 'Próximo a iniciar');
-const porTerminar = products.filter((p) => p.estadoTemporada === 'Por terminar');
+const porTerminar   = products.filter((p) => p.estadoTemporada === 'Por terminar');
 
 // ── Sección de carrusel horizontal ──────────────────────────────────────────
 function ProductCarousel({ title, icon: Icon, iconClass, products, emptyMessage }) {
@@ -46,6 +46,39 @@ function ProductCarousel({ title, icon: Icon, iconClass, products, emptyMessage 
   );
 }
 
+// ── Stats strip ──────────────────────────────────────────────────────────────
+function StatsStrip() {
+  const stats = [
+    { value: products.length, label: 'Productos', emoji: '🌱' },
+    { value: enTemporada.length, label: 'En temporada', emoji: '✅' },
+    { value: new Set(products.map(p => p.region)).size, label: 'Regiones', emoji: '🗺️' },
+  ];
+
+  return (
+    <div className="px-4">
+      <div className="grid grid-cols-3 gap-3">
+        {stats.map(({ value, label, emoji }) => (
+          <div
+            key={label}
+            className="
+              flex flex-col items-center justify-center gap-1
+              py-3 px-2 rounded-2xl
+              bg-gradient-to-br from-[#1e2d1e] to-[#162016]
+              border border-green-900/40
+            "
+          >
+            <span className="text-lg" aria-hidden="true">{emoji}</span>
+            <span className="text-xl font-black text-green-300">{value}</span>
+            <span className="text-[10px] text-green-700 font-semibold text-center leading-tight">
+              {label}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // ── Página Home ──────────────────────────────────────────────────────────────
 export default function Home() {
   // Buscar el primer producto en temporada para el banner
@@ -56,13 +89,19 @@ export default function Home() {
 
       {/* ── Hero ── */}
       <div className="px-4 flex flex-col gap-4">
+        {/* Headline */}
         <div className="flex flex-col gap-1">
           <p className="text-xs font-semibold tracking-widest uppercase text-green-500">
             Calendario Vivo
           </p>
           <h1 className="text-3xl font-black text-green-50 leading-tight">
             Sabores de Bolivia,<br />
-            <span className="text-green-400">en su momento exacto.</span>
+            <span
+              className="text-transparent"
+              style={{ WebkitTextStroke: '1px #22c55e' }}
+            >
+              en su momento exacto.
+            </span>
           </h1>
           <p className="text-sm text-green-500/80 mt-1 leading-relaxed">
             Conectamos chefs y restaurantes con los productores locales y sus temporadas de cosecha.
@@ -77,6 +116,9 @@ export default function Home() {
           />
         )}
       </div>
+
+      {/* ── Stats strip ── */}
+      <StatsStrip />
 
       {/* ── Separador decorativo ── */}
       <div className="px-4">

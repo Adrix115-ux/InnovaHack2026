@@ -27,7 +27,7 @@ export default function MapExplorer() {
 
   return (
     // Pantalla completa — sin scroll vertical propio, el sheet maneja su scroll
-    <div className="fixed inset-0 flex flex-col bg-[#0a120a]" style={{ paddingTop: '56px' }}>
+    <div className="fixed inset-0 flex flex-col bg-[#0a120a]" style={{ paddingTop: '56px', paddingBottom: '72px' }}>
 
       {/* ── Barra de título de la vista ── */}
       <div className="flex items-center justify-between px-4 py-3 bg-[#0f1a0f]/90 backdrop-blur-sm border-b border-green-900/30 shrink-0">

@@ -1,25 +1,38 @@
-// MainLayout.jsx — Wrapper principal que incluye la navbar y el área de contenido
-import { Outlet } from 'react-router-dom';
-import MobileNavbar from './MobileNavbar';
+// MainLayout.jsx — Wrapper principal con header minimal + bottom tab bar
+import { Outlet, useLocation } from 'react-router-dom';
+import BottomTabBar from './BottomTabBar';
+
+// Pequeño header de branding (ya no hamburguesa)
+import TopHeader from './TopHeader';
 
 export default function MainLayout() {
+  const { pathname } = useLocation();
+
+  // El MapExplorer maneja su propio layout de pantalla completa,
+  // así que sólo le damos padding inferior para la tab bar
+  const isMap = pathname === '/mapa';
+
   return (
     <div className="min-h-screen flex flex-col bg-[#0f1a0f]">
-      {/* Navbar fija */}
-      <MobileNavbar />
+      {/* Header fijo con branding */}
+      <TopHeader />
 
-      {/* Contenido principal — offset por la altura del header (56px = h-14) */}
+      {/* Contenido principal */}
       <main
-        className="flex-1 pt-14 pb-6 max-w-lg mx-auto w-full"
         id="main-content"
+        className={`
+          flex-1 max-w-lg mx-auto w-full
+          ${isMap
+            ? 'pt-0'                         // el mapa maneja su propio padding-top
+            : 'pt-14 pb-24 page-transition'  // 56px header + 80px tab bar
+          }
+        `}
       >
         <Outlet />
       </main>
 
-      {/* Footer mínimo */}
-      <footer className="text-center py-4 text-xs text-green-900 border-t border-green-900/20">
-        InnovaHack FAN &copy; {new Date().getFullYear()} — Bolivia
-      </footer>
+      {/* Bottom navigation */}
+      <BottomTabBar />
     </div>
   );
 }

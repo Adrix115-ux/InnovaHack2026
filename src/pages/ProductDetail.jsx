@@ -1,10 +1,18 @@
 // ProductDetail.jsx — Ficha técnica completa de un producto
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Phone, ChevronDown, ChevronUp, Leaf, UtensilsCrossed, CalendarDays } from 'lucide-react';
+import { ArrowLeft, Phone, ChevronDown, ChevronUp, Leaf, UtensilsCrossed, CalendarDays, MessageCircle, Share2 } from 'lucide-react';
 import { useState } from 'react';
 import SeasonBadge from '../components/ui/SeasonBadge';
 import { getAllMonths, getSeasonStyle } from '../utils/dateHelpers';
 import products from '../data/mockProducts.json';
+
+// Mapa de etiquetas para las regiones
+const REGION_LABELS = {
+  amazonia:    { label: 'Amazonía',    emoji: '🌿' },
+  chiquitania: { label: 'Chiquitania', emoji: '🌳' },
+  valles:      { label: 'Valles',      emoji: '🌄' },
+  santa_cruz:  { label: 'Santa Cruz',  emoji: '🌴' },
+};
 
 // ── Componente: Visualizador de meses del año ────────────────────────────────
 function MonthCalendar({ mesesDisponible }) {
@@ -96,23 +104,53 @@ export default function ProductDetail() {
 
       {/* ── Hero image placeholder ── */}
       <div
-        className={`relative flex flex-col items-center justify-center h-52 ${bg}`}
+        className={`relative flex flex-col items-center justify-center h-56 ${bg}`}
         role="img"
         aria-label={`Imagen representativa de ${product.nombre}`}
       >
-        <Leaf size={80} className={`${text} opacity-30`} />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0f1a0f]" />
+        {/* Decorative background pattern */}
+        <div className="absolute inset-0 opacity-10" style={{
+          backgroundImage: 'radial-gradient(circle at 25% 25%, white 1px, transparent 1px), radial-gradient(circle at 75% 75%, white 1px, transparent 1px)',
+          backgroundSize: '32px 32px',
+        }} />
 
-        {/* Back button */}
-        <button
-          id="back-button"
-          onClick={() => navigate(-1)}
-          className="absolute top-4 left-4 flex items-center gap-2 px-3 py-2 rounded-xl bg-black/40 backdrop-blur-sm border border-white/10 text-white text-xs font-semibold hover:bg-black/60 transition-colors active:scale-95"
-          aria-label="Volver atrás"
-        >
-          <ArrowLeft size={14} />
-          Volver
-        </button>
+        <Leaf size={96} className={`${text} opacity-25 drop-shadow-2xl`} />
+
+        {/* Gradient fade to page background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-[#0f1a0f]" />
+
+        {/* Top bar: back + share */}
+        <div className="absolute top-0 inset-x-0 flex items-center justify-between px-4 pt-4">
+          <button
+            id="back-button"
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-2 px-3 py-2 rounded-xl bg-black/40 backdrop-blur-sm border border-white/10 text-white text-xs font-semibold hover:bg-black/60 transition-all duration-200 active:scale-95"
+            aria-label="Volver atrás"
+          >
+            <ArrowLeft size={14} />
+            Volver
+          </button>
+          <button
+            id="share-product"
+            className="flex items-center justify-center w-9 h-9 rounded-xl bg-black/40 backdrop-blur-sm border border-white/10 text-white hover:bg-black/60 transition-all duration-200 active:scale-95"
+            aria-label="Compartir producto"
+            onClick={() => {
+              if (navigator.share) {
+                navigator.share({ title: product.nombre, text: product.descripcionBreve, url: window.location.href });
+              }
+            }}
+          >
+            <Share2 size={14} />
+          </button>
+        </div>
+
+        {/* Region badge bottom-left */}
+        {REGION_LABELS[product.region] && (
+          <div className="absolute bottom-4 left-4 flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-black/40 backdrop-blur-sm border border-white/10">
+            <span className="text-sm">{REGION_LABELS[product.region].emoji}</span>
+            <span className="text-xs text-white font-semibold">{REGION_LABELS[product.region].label}</span>
+          </div>
+        )}
       </div>
 
       {/* ── Content area ── */}
@@ -163,21 +201,44 @@ export default function ProductDetail() {
               {product.contacto.telefono}
             </a>
           </div>
-          <a
-            href={`tel:${product.contacto.telefono.replace(/\s/g, '')}`}
-            id="contact-call-button"
-            className="
-              mt-1 flex items-center justify-center gap-2
-              w-full py-3.5 rounded-2xl
-              bg-green-600 hover:bg-green-500 active:bg-green-700
-              text-white font-bold text-sm
-              transition-all duration-200 active:scale-[0.98]
-              shadow-lg shadow-green-900/40
-            "
-          >
-            <Phone size={16} />
-            Llamar ahora
-          </a>
+          {/* Action buttons row */}
+          <div className="flex gap-2 mt-1">
+            {/* WhatsApp button — primary CTA */}
+            <a
+              href={`https://wa.me/${product.contacto.telefono.replace(/[\s+()-]/g, '')}?text=${encodeURIComponent(`Hola! Me interesa el producto *${product.nombre}* que vi en el Calendario Vivo FAN. ¿Tienen disponibilidad?`)}`}
+              id="contact-whatsapp-button"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                flex-1 flex items-center justify-center gap-2
+                py-3.5 rounded-2xl
+                bg-[#25D366] hover:bg-[#20b356] active:bg-[#1a9449]
+                text-white font-bold text-sm
+                transition-all duration-200 active:scale-[0.98]
+                shadow-lg shadow-[#25D366]/20
+              "
+            >
+              <MessageCircle size={16} />
+              WhatsApp
+            </a>
+
+            {/* Call button — secondary */}
+            <a
+              href={`tel:${product.contacto.telefono.replace(/\s/g, '')}`}
+              id="contact-call-button"
+              className="
+                flex-1 flex items-center justify-center gap-2
+                py-3.5 rounded-2xl
+                bg-green-800/40 hover:bg-green-700/50 active:bg-green-800/60
+                border border-green-700/40
+                text-green-300 font-bold text-sm
+                transition-all duration-200 active:scale-[0.98]
+              "
+            >
+              <Phone size={16} />
+              Llamar
+            </a>
+          </div>
         </section>
 
         {/* ── Usos Gastronómicos (acordeón) ── */}

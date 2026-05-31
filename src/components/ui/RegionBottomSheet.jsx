@@ -9,10 +9,23 @@ const REGION_DATA = {
   'santa_cruz': {
     label: 'Santa Cruz',
     emoji: '🌴',
-    color: '#22c55e' // Verde brillante
+    color: '#22c55e'
   },
-  // Puedes agregar más en el futuro:
-  // 'velasco': { label: 'Provincia Velasco', emoji: '🐆', color: '#4ade80' }
+  'amazonia': {
+    label: 'Amazonía',
+    emoji: '🌿',
+    color: '#4ade80'
+  },
+  'chiquitania': {
+    label: 'Chiquitania',
+    emoji: '🌳',
+    color: '#f59e0b'
+  },
+  'valles': {
+    label: 'Valles',
+    emoji: '🌄',
+    color: '#60a5fa'
+  },
 };
 
 /**
@@ -55,7 +68,7 @@ export default function RegionBottomSheet({ region, products, onClose }) {
             onClick={onClose}
             aria-hidden="true"
             className={`
-          fixed inset-0 z-40 bg-black/60 backdrop-blur-sm
+          fixed inset-0 z-[55] bg-black/60 backdrop-blur-sm
           transition-opacity duration-300
           ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
         `}
@@ -68,7 +81,7 @@ export default function RegionBottomSheet({ region, products, onClose }) {
             aria-modal="true"
             aria-label={isOpen ? `Productos de ${regionLabel}` : 'Panel de región'}
             className={`
-          fixed bottom-0 inset-x-0 z-50
+          fixed bottom-0 inset-x-0 z-[60]
           flex flex-col
           max-h-[78vh]
           bg-[#111b11]
