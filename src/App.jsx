@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Catalog from './pages/Catalog';
 import ProductDetail from './pages/ProductDetail';
 import MapExplorer from './pages/MapExplorer';
+import AuthPage from './pages/auth/AuthPage';
 
 export default function App() {
   return (
@@ -19,6 +20,9 @@ export default function App() {
           {/* Redirección para rutas no encontradas */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
+
+        {/* ── Flujo de Auth (sin MainLayout, layout propio) ── */}
+        <Route path="/registro" element={<AuthPage />} />
       </Routes>
     </BrowserRouter>
   );

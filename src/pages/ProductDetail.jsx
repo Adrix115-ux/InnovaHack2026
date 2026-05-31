@@ -8,10 +8,10 @@ import products from '../data/mockProducts.json';
 
 // Mapa de etiquetas para las regiones
 const REGION_LABELS = {
-  amazonia:    { label: 'Amazonía',    emoji: '🌿' },
+  amazonia: { label: 'Amazonía', emoji: '🌿' },
   chiquitania: { label: 'Chiquitania', emoji: '🌳' },
-  valles:      { label: 'Valles',      emoji: '🌄' },
-  santa_cruz:  { label: 'Santa Cruz',  emoji: '🌴' },
+  valles: { label: 'Valles', emoji: '🌄' },
+  santa_cruz: { label: 'Santa Cruz', emoji: '🌴' },
 };
 
 // ── Componente: Visualizador de meses del año ────────────────────────────────

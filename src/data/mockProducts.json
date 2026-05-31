@@ -6,7 +6,12 @@
     "regionProcedencia": "Velasco",
     "region": "chiquitania",
     "estadoTemporada": "En temporada",
-    "mesesDisponible": [4, 5, 6, 7],
+    "mesesDisponible": [
+      4,
+      5,
+      6,
+      7
+    ],
     "contacto": {
       "nombreAsociacion": "Asociación de Recolectoras Chiquitanas ARBOL",
       "telefono": "+591 7712 3456"
@@ -26,7 +31,11 @@
     "regionProcedencia": "Guarayos",
     "region": "amazonia",
     "estadoTemporada": "Fuera de temporada",
-    "mesesDisponible": [11, 12, 1],
+    "mesesDisponible": [
+      11,
+      12,
+      1
+    ],
     "contacto": {
       "nombreAsociacion": "Cooperativa Frutas Amazónicas Guarayos",
       "telefono": "+591 7698 1120"
@@ -46,7 +55,13 @@
     "regionProcedencia": "Guarayos",
     "region": "amazonia",
     "estadoTemporada": "Próximo a iniciar",
-    "mesesDisponible": [6, 7, 8, 9, 10],
+    "mesesDisponible": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "contacto": {
       "nombreAsociacion": "COOPAM Beni-Guarayos",
       "telefono": "+591 6698 7890"
@@ -66,7 +81,12 @@
     "regionProcedencia": "Ñuflo de Chávez",
     "region": "chiquitania",
     "estadoTemporada": "Próximo a iniciar",
-    "mesesDisponible": [6, 7, 8, 9],
+    "mesesDisponible": [
+      6,
+      7,
+      8,
+      9
+    ],
     "contacto": {
       "nombreAsociacion": "Comunidad Productora Monte Verde",
       "telefono": "+591 7834 0021"
@@ -86,7 +106,11 @@
     "regionProcedencia": "Velasco",
     "region": "chiquitania",
     "estadoTemporada": "Próximo a iniciar",
-    "mesesDisponible": [7, 8, 9],
+    "mesesDisponible": [
+      7,
+      8,
+      9
+    ],
     "contacto": {
       "nombreAsociacion": "Asociación Agroforestal Concepción Sur",
       "telefono": "+591 7756 3312"
@@ -106,7 +130,13 @@
     "regionProcedencia": "Ñuflo de Chávez",
     "region": "chiquitania",
     "estadoTemporada": "En temporada",
-    "mesesDisponible": [3, 4, 5, 6, 7],
+    "mesesDisponible": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
     "contacto": {
       "nombreAsociacion": "Mujeres Productoras de San Julián",
       "telefono": "+591 6712 8845"
@@ -126,7 +156,12 @@
     "regionProcedencia": "Chiquitos",
     "region": "chiquitania",
     "estadoTemporada": "Fuera de temporada",
-    "mesesDisponible": [8, 9, 10, 11],
+    "mesesDisponible": [
+      8,
+      9,
+      10,
+      11
+    ],
     "contacto": {
       "nombreAsociacion": "APROCUSI San Ignacio de Velasco",
       "telefono": "+591 7541 6690"
@@ -146,7 +181,14 @@
     "regionProcedencia": "Velasco",
     "region": "chiquitania",
     "estadoTemporada": "En temporada",
-    "mesesDisponible": [4, 5, 6, 7, 8, 9],
+    "mesesDisponible": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
     "contacto": {
       "nombreAsociacion": "Meliponicultoras del Bosque Chiquitano",
       "telefono": "+591 7623 4410"
@@ -166,7 +208,11 @@
     "regionProcedencia": "Guarayos",
     "region": "amazonia",
     "estadoTemporada": "Por terminar",
-    "mesesDisponible": [3, 4, 5],
+    "mesesDisponible": [
+      3,
+      4,
+      5
+    ],
     "contacto": {
       "nombreAsociacion": "APAM Asociación de Palmicultores Amazónicos",
       "telefono": "+591 7880 2234"
@@ -186,7 +232,12 @@
     "regionProcedencia": "Guarayos",
     "region": "amazonia",
     "estadoTemporada": "En temporada",
-    "mesesDisponible": [5, 6, 7, 8],
+    "mesesDisponible": [
+      5,
+      6,
+      7,
+      8
+    ],
     "contacto": {
       "nombreAsociacion": "COPROCA Cooperativa de Productores de Cacao",
       "telefono": "+591 7934 5555"
@@ -206,7 +257,12 @@
     "regionProcedencia": "Chiquitos",
     "region": "chiquitania",
     "estadoTemporada": "Fuera de temporada",
-    "mesesDisponible": [9, 10, 11, 12],
+    "mesesDisponible": [
+      9,
+      10,
+      11,
+      12
+    ],
     "contacto": {
       "nombreAsociacion": "Productores Forestales de San José de Chiquitos",
       "telefono": "+591 7312 9900"
@@ -226,7 +282,12 @@
     "regionProcedencia": "Ñuflo de Chávez",
     "region": "chiquitania",
     "estadoTemporada": "Por terminar",
-    "mesesDisponible": [2, 3, 4, 5],
+    "mesesDisponible": [
+      2,
+      3,
+      4,
+      5
+    ],
     "contacto": {
       "nombreAsociacion": "Recolectores Ribereños del Río San Julián",
       "telefono": "+591 7456 1187"
@@ -246,7 +307,14 @@
     "regionProcedencia": "Guarayos",
     "region": "amazonia",
     "estadoTemporada": "En temporada",
-    "mesesDisponible": [4, 5, 6, 7, 8, 9],
+    "mesesDisponible": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
     "contacto": {
       "nombreAsociacion": "Asociación Agroforestal Yaguarú",
       "telefono": "+591 7745 6632"
@@ -266,7 +334,12 @@
     "regionProcedencia": "Guarayos",
     "region": "amazonia",
     "estadoTemporada": "Próximo a iniciar",
-    "mesesDisponible": [7, 8, 9, 10],
+    "mesesDisponible": [
+      7,
+      8,
+      9,
+      10
+    ],
     "contacto": {
       "nombreAsociacion": "Asociación de Mujeres Productoras Urucú Verde",
       "telefono": "+591 6987 3340"
@@ -286,7 +359,12 @@
     "regionProcedencia": "Guarayos",
     "region": "amazonia",
     "estadoTemporada": "Fuera de temporada",
-    "mesesDisponible": [10, 11, 12, 1],
+    "mesesDisponible": [
+      10,
+      11,
+      12,
+      1
+    ],
     "contacto": {
       "nombreAsociacion": "Frutales Amazónicos del Norte Cruceño",
       "telefono": "+591 7823 1190"
@@ -306,7 +384,12 @@
     "regionProcedencia": "Ñuflo de Chávez",
     "region": "chiquitania",
     "estadoTemporada": "En temporada",
-    "mesesDisponible": [4, 5, 6, 7],
+    "mesesDisponible": [
+      4,
+      5,
+      6,
+      7
+    ],
     "contacto": {
       "nombreAsociacion": "Recolectoras del Monte Ñuflo de Chávez",
       "telefono": "+591 7601 4423"
@@ -326,7 +409,12 @@
     "regionProcedencia": "Guarayos",
     "region": "amazonia",
     "estadoTemporada": "Próximo a iniciar",
-    "mesesDisponible": [6, 7, 8, 9],
+    "mesesDisponible": [
+      6,
+      7,
+      8,
+      9
+    ],
     "contacto": {
       "nombreAsociacion": "Asociación Agroecológica Guarayos Norte",
       "telefono": "+591 7712 8801"
@@ -346,7 +434,12 @@
     "regionProcedencia": "Guarayos",
     "region": "amazonia",
     "estadoTemporada": "Próximo a iniciar",
-    "mesesDisponible": [7, 8, 9, 10],
+    "mesesDisponible": [
+      7,
+      8,
+      9,
+      10
+    ],
     "contacto": {
       "nombreAsociacion": "Recolectores del Bosque Guarayos Sur",
       "telefono": "+591 6845 2270"
@@ -366,7 +459,13 @@
     "regionProcedencia": "Ángel Sandoval",
     "region": "chiquitania",
     "estadoTemporada": "Fuera de temporada",
-    "mesesDisponible": [10, 11, 12, 1, 2],
+    "mesesDisponible": [
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
     "contacto": {
       "nombreAsociacion": "APROPAL Productores de Palmas San Matías",
       "telefono": "+591 7512 6644"
@@ -386,7 +485,14 @@
     "regionProcedencia": "Ñuflo de Chávez",
     "region": "chiquitania",
     "estadoTemporada": "En temporada",
-    "mesesDisponible": [3, 4, 5, 6, 7, 8],
+    "mesesDisponible": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
     "contacto": {
       "nombreAsociacion": "Plantas Medicinales y Culinarias del Bosque Seco",
       "telefono": "+591 7690 5512"
