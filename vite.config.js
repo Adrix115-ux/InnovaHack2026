@@ -4,6 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Base URL for GitHub Pages deployment at /InnovaHack2026/
+  base: '/InnovaHack2026/',
   plugins: [
     react(),
     tailwindcss(),

@@ -9,7 +9,7 @@ import AuthPage from './pages/auth/AuthPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/InnovaHack2026">
       <Routes>
         {/* Todas las rutas comparten el layout principal con navbar */}
         <Route element={<MainLayout />}>
