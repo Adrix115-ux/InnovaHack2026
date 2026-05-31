@@ -5,9 +5,23 @@ import MapaInteractivo from '../components/ui/MapaInteractivo';
 import RegionBottomSheet from '../components/ui/RegionBottomSheet';
 import products from '../data/mockProducts.json';
 
+// ── Mapeo: clase SVG del mapa → campo "region" del JSON ─────────────────────
+// El SVG dispara las clases CSS (st4, st9, st7, st11, st6…) al hacer click.
+// Aquí las traducimos al valor de p.region que usa el JSON de productos.
+const CLASE_A_REGION = {
+  st4:  'chiquitania',  // Velasco (rojo principal)
+  st7:  'chiquitania',  // Ñuflo de Chávez (azul)
+  st11: 'chiquitania',  // Chiquitos (rojo)
+  st6:  'chiquitania',  // Ángel Sandoval (gris claro)
+  st9:  'amazonia',     // Guarayos (amarillo)
+};
+
 export default function MapExplorer() {
-  // ── Estado principal: qué región está seleccionada ─────────────────────────
-  const [selectedRegion, setSelectedRegion] = useState(null);
+  // ── Estado principal: clase SVG seleccionada ────────────────────────────────
+  const [selectedClase, setSelectedClase] = useState(null);
+
+  // ── Región lógica derivada de la clase SVG ──────────────────────────────────
+  const selectedRegion = selectedClase ? (CLASE_A_REGION[selectedClase] ?? null) : null;
 
   // ── Filtrar productos según la región activa ───────────────────────────────
   const regionProducts = useMemo(() => {
@@ -16,13 +30,15 @@ export default function MapExplorer() {
   }, [selectedRegion]);
 
   // ── Handlers ───────────────────────────────────────────────────────────────
-  const handleRegionClick = useCallback((regionId) => {
-    // Si se toca la misma región dos veces, se deselecciona
-    setSelectedRegion((prev) => (prev === regionId ? null : regionId));
+  const handleRegionClick = useCallback((claseId) => {
+    // Solo reaccionar a clases que tenemos en el mapeo
+    if (!CLASE_A_REGION[claseId]) return;
+    // Si se toca la misma clase dos veces, se deselecciona
+    setSelectedClase((prev) => (prev === claseId ? null : claseId));
   }, []);
 
   const handleClose = useCallback(() => {
-    setSelectedRegion(null);
+    setSelectedClase(null);
   }, []);
 
   return (
@@ -63,7 +79,7 @@ export default function MapExplorer() {
         {/* Contenedor del SVG — ocupa todo el espacio disponible */}
         <div className="absolute inset-0 z-0">
           <MapaInteractivo
-            selectedRegion={selectedRegion}
+            selectedRegion={selectedClase}
             onRegionClick={handleRegionClick}
           />
         </div>

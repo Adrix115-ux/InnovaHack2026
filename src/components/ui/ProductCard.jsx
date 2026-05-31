@@ -1,18 +1,9 @@
 // ProductCard.jsx — Tarjeta de producto para carruseles y grids
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import SeasonBadge from './SeasonBadge';
 import { formatMonthRange, getSeasonStyle } from '../../utils/dateHelpers';
-
-// Mapa de emojis por nombre de producto (fallback si no coincide: 🌿)
-const PRODUCT_EMOJIS = {
-  'Almendra Chiquitana': '🌰',
-  'Copoazú':            '🍈',
-  'Camu Camu':          '🫐',
-  'Maíz Morado Andino': '🌽',
-  'Locoto Rojo':        '🌶️',
-  'Quinua Real':        '🌾',
-};
 
 /**
  * Props:
@@ -20,9 +11,9 @@ const PRODUCT_EMOJIS = {
  *  - variant (string): 'carousel' | 'grid'  [default: 'carousel']
  */
 export default function ProductCard({ product, variant = 'carousel' }) {
-  const { bg, text } = getSeasonStyle(product.estadoTemporada);
-  const emoji = PRODUCT_EMOJIS[product.nombre] ?? '🌿';
+  const { bg } = getSeasonStyle(product.estadoTemporada);
   const isGrid = variant === 'grid';
+  const [imgError, setImgError] = useState(false);
 
   return (
     <Link
@@ -37,34 +28,37 @@ export default function ProductCard({ product, variant = 'carousel' }) {
       `}
       aria-label={`Ver ficha de ${product.nombre}`}
     >
-      {/* Image / emoji hero */}
+      {/* Image hero */}
       <div
         className={`
           relative flex items-center justify-center overflow-hidden
-          ${bg}
           ${isGrid ? 'h-32' : 'h-28'}
         `}
+        style={{ background: '#162016' }}
       >
-        {/* Subtle dot-grid pattern */}
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-            backgroundSize: '16px 16px',
-          }}
-        />
-
-        {/* Large emoji */}
-        <span
-          className="relative text-5xl select-none drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
-          aria-hidden="true"
-          style={{ fontSize: isGrid ? '3rem' : '2.5rem' }}
-        >
-          {emoji}
-        </span>
+        {product.imagenUrl && !imgError ? (
+          <img
+            src={product.imagenUrl}
+            alt={product.nombre}
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            onError={() => setImgError(true)}
+            loading="lazy"
+          />
+        ) : (
+          /* Fallback: colored background + emoji */
+          <div className={`absolute inset-0 ${bg} flex items-center justify-center`}>
+            <span
+              className="text-5xl select-none drop-shadow-lg"
+              aria-hidden="true"
+              style={{ fontSize: isGrid ? '3rem' : '2.5rem' }}
+            >
+              🌿
+            </span>
+          </div>
+        )}
 
         {/* Gradient overlay at bottom */}
-        <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#1e2d1e] to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#162016] to-transparent" />
       </div>
 
       {/* Content */}

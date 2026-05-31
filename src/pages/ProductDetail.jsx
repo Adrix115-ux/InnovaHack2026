@@ -102,19 +102,31 @@ export default function ProductDetail() {
   return (
     <div className="flex flex-col">
 
-      {/* ── Hero image placeholder ── */}
+      {/* ── Hero image ── */}
       <div
-        className={`relative flex flex-col items-center justify-center h-56 ${bg}`}
+        className="relative flex flex-col items-center justify-center h-56 overflow-hidden"
         role="img"
         aria-label={`Imagen representativa de ${product.nombre}`}
+        style={{ background: '#0f1a0f' }}
       >
-        {/* Decorative background pattern */}
-        <div className="absolute inset-0 opacity-10" style={{
-          backgroundImage: 'radial-gradient(circle at 25% 25%, white 1px, transparent 1px), radial-gradient(circle at 75% 75%, white 1px, transparent 1px)',
-          backgroundSize: '32px 32px',
-        }} />
-
-        <Leaf size={96} className={`${text} opacity-25 drop-shadow-2xl`} />
+        {product.imagenUrl ? (
+          <img
+            src={product.imagenUrl}
+            alt={product.nombre}
+            className="absolute inset-0 w-full h-full object-cover"
+            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+          />
+        ) : (
+          /* Decorative background pattern fallback */
+          <>
+            <div className={`absolute inset-0 ${bg}`} />
+            <div className="absolute inset-0 opacity-10" style={{
+              backgroundImage: 'radial-gradient(circle at 25% 25%, white 1px, transparent 1px), radial-gradient(circle at 75% 75%, white 1px, transparent 1px)',
+              backgroundSize: '32px 32px',
+            }} />
+            <Leaf size={96} className={`${text} opacity-25 drop-shadow-2xl`} />
+          </>
+        )}
 
         {/* Gradient fade to page background */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-[#0f1a0f]" />
